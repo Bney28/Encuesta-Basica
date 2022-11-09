@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --White: #ffffff;
+    --Light_Grey: #959eac;
+    --Medium_Grey: #7c8798;
+    --Dark_Blue: #1e252f;
+    --Very_DarkBlue: #121417;
+    --greyTransition: #262f38;
+    --color-primary: #fb7413;
+
+}
+
+body{
+    background-color: var(--Very_DarkBlue);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container-botones{
+    display: block;
+    width: 350px;
+    height: 350px;
+    background-color: var(--Dark_Blue);
+    margin: 0 auto;
+    padding:40px;
+    padding-top: 60px;
+    border-radius: 10%;
+    line-height: 25px;
+}
+
+.encabezado-botones{
+    color: var(--White);
+    text-align: left;
+}
+
+.parrafo-botones{
+    color: var(--Medium_Grey);
+}
+
+.flex-botones{
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.botones{
+    background-color: var(--greyTransition);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    color: var(--Light_Grey);
+    margin: 3%;
+    cursor: pointer;
+}
+
+.botones:hover{
+    background-color: var(--Light_Grey);
+    color: var(--White);
+}
+
+.botones:focus{
+    background-color: var(--color-primary);
+    color: var(--White);
+}
+
+.botonSubmit{
+    width: 100%;
+    text-align: center;
+    border: 0;
+    background-color: var(--color-primary);
+    padding: 3%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botonSubmit:hover{
+    background-color: var(--White);
+    color:var(--color-primary);
+    
+}
+
+.illustration-thank-you{
+    text-align:  center;
+
+}
+
+.encabezado-gracias{
+    color: var(--White);
+    text-align: center;
+}
+
+.parrafo-gracias{
+    text-align: center;
+    color: var(--Medium_Grey);
+}
+
+.container-gracias{
+    display: none;
+    width: 350px;
+    height: 350px;
+    background-color: var(--Dark_Blue);
+    margin: 0 auto;
+    padding:40px;
+    border-radius: 10%;
+    line-height: 25px;
+}
+
+.registrado{
+    width: 70%;
+    margin: auto;
+    background-color: var(--greyTransition);
+    color: var(--color-primary);
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:375px) {
+    
+    .container-botones{
+        margin: 3%;
+    }
+
+    .container-gracias{
+        margin: 3%;
+    }
+}
